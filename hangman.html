@@ -1,57 +1,36 @@
-<link rel="stylesheet" type="text/css" href="style.css" />
-		<div class="wrapper hangmanGame">
-			<div class="overLay">
-				<div class="youWon result">
-					<h4>You Won!</h4>
-					<p>
-						<span class="word"></span>
-						<a class="gsearch" href="#" data-href="https://www.google.co.in/search?q=" target="_blank">?</a>					
-					</p>
-					<span class="next">Play Next</span>
-				</div>
-				<div class="youLost result">
-					<h4>You Lost :(</h4>
-					<p>
-						<span class="word"></span>
-						<a class="gsearch" href="#" data-href="https://www.google.co.in/search?q=" target="_blank">?</a>					
-					</p>
-					<span class="next">Play Next</span>
-				</div>
-			</div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-			<div class="title">
-				HangMan HTML
-			</div>
-			<div class="startWrapper">
-				<div class="categories">
-				<span>Select a category</span>
-				</div>
-				<div class="start">Start Game</div>
-			</div>
-			<div id="hangMan">
-				<div class="indicator">
-					<span class="maxTry">5</span>/<span class="remaining">5</span>
-				</div>
-				<div class="hangman">
-					<div class="shaft"></div>
-					<div class="pole"></div>  
-					<div class="rope"></div>
-					<div class="base"></div>
-					<div class="man">
-						<div class="wrapperMan">
-						<div class="face"></div>
-						<div class="hands"></div>
-						<div class="legs"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="answerSpace"><span></span></div>
-			<div id="keypad"></div>
-			<div id="scoreBoard">
-				<div class="reset"><div><span class="resetBtn">Reset</span></div></div>
-				<div class="mute"><div><span class="muteBtn">Sounds ON</span></div><div><span class="muteBtn">Sounds OFF</span></div></div>
-				<div class="won"><div>Won : <span class="wonCount">0</span></div></div>
-				<div class="lost"><div>Lost : <span class="lostCount">0</span></div></div>
-			</div>
-		</div>
+<title>Hangmanizr | Quick Hangman Game</title>
+<link rel="shortcut icon" href="./img/favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script type="text/javascript" src="js/react.min.js"></script>
+<script type="text/javascript" src="js/react-dom.min.js"></script>
+<script type="text/javascript" src="js/JSXTransformer.js"></script>
+<script type="text/jsx" src="js/script.jsx"></script>
+
+<meta property="og:title" content="Hangmanizr" />
+<meta property="og:description" content="Quick Hangman Game" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@mburakerman" />
+<meta name="twitter:creator" content="@mburakerman" />
+<meta name="twitter:title" content="Hangmanizr">
+<meta name="twitter:description" content="Quick Hangman Game" />
+<!-- Twitter --> 
+
+</head>
+<body>
+
+<div id="app"></div>
+
+</body>
+</html>
